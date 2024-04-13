@@ -1,4 +1,5 @@
 .idea/*
+/brainstorm.txt
 
 ###> symfony/framework-bundle ###
 /.env.local

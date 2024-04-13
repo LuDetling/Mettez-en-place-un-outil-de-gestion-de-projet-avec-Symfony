@@ -17,4 +17,10 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'addcar' => [[], ['_controller' => 'App\\Controller\\CarController::addCar'], [], [['text', '/addcar']], [], [], []],
+    'showcar' => [['id'], ['_controller' => 'App\\Controller\\CarController::showCar'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/showcar']], [], [], []],
+    'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
+    'App\Controller\CarController::addCar' => [[], ['_controller' => 'App\\Controller\\CarController::addCar'], [], [['text', '/addcar']], [], [], []],
+    'App\Controller\CarController::showCar' => [['id'], ['_controller' => 'App\\Controller\\CarController::showCar'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/showcar']], [], [], []],
+    'App\Controller\HomeController::index' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
 ];
